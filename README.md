@@ -67,7 +67,12 @@ _(Click image to go to the video on YouTube)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Setup Instructions
+In addition to the [Get Started instructions for Meta Quest Unity development](https://developers.meta.com/horizon/documentation/unity/unity-development-overview), you will need to create a Photon Fusion 2 App ID in order to use the multiplayer features of this game. Follow [these instructions](https://developers.meta.com/horizon/documentation/unity/bb-multiplayer-blocks#photon-fusion-app-ids) to set your Fusion App ID in Unity.
 
+Usage of the Meta Colocation SDK with Local Matchmaking requires that the Meta account on your headset is a developer account in a verified developer organization. Otherwise, the headsets will not be able to use shared spatial anchors to determine their relative positions and the game will not be multiplayer. See [this link](https://developers.meta.com/horizon/documentation/unity/bb-multiplayer-blocks#setup-with-colocation-session) for details.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
