@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fb6a049bc22594c0c9a7206681a88d3b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207032
+  packageName: Simple Foods
+  packageVersion: 2.0
+  assetPath: Assets/Simple Foods/Prefabs/BreadSlice.prefab
+  uploadId: 732422

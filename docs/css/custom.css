@@ -1,0 +1,347 @@
+/* General Elements
+---------------------------------------- */
+
+.container {
+  max-width: 800px; }
+.header {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  text-align: center; }
+.docs-bio-header {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-weight: 600; 
+  margin-bottom: 0; }
+.docs-bio-subheader {
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  margin-bottom: 0; }
+.docs-bio-subsubheader {
+  font-size: 1.4rem;
+  letter-spacing: .05rem; }
+.docs-bio-image {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 175px;
+  box-sizing: border-box; }
+.docs-header {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+  font-weight: 600; }
+.docs-section {
+  border-top: 1px solid #eee;
+  padding: 2rem 0;
+  margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-word; }
+.navbar {
+  display: none; }
+
+/* Schedule
+---------------------------------------- */
+.schedule th, td{
+  vertical-align: text-top;
+  padding: 3px 15px 7px 0px;
+  line-height: 125%;
+}
+
+/* CSE 490V Lists
+---------------------------------------- */
+.cse490v-list {
+  /*
+  text-align: center
+  vertical-align: text-top;
+  list-style-position: outside;
+  padding: 3px 15px 7px 0px;
+  line-height: 100%;
+  */
+    text-align: left;
+    list-style-type:circle;
+    list-style-position: outside;
+    text-indent: 0em;
+    padding-left: 2em;
+}
+.cse490v-list li{
+    margin: 0;
+}
+
+/* "Hero" Header Information
+---------------------------------------- */
+.hero {
+  padding: 25px 0;
+  min-height: 200px; 
+  text-align:center;
+  position: relative;
+  background-color: #ffffff; /* layer fill content */
+  color: black;
+}
+.hero-image {
+  background: url("../images/cookedtransparent.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  opacity: 0.0;
+}
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  letter-spacing: .2rem;
+  font-weight: 600; 
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+.hero h2 {
+  font-size: 2.0rem;
+  letter-spacing: .2rem;
+  font-weight:00;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.hero p {
+  padding: 0 15%;
+}
+.hero .separator:before {
+  background-color: white;
+}
+
+/* Slideshow
+---------------------------------------- */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slideshow-container a {
+  color: white; 
+  text-decoration: none;}
+.slideshow-container a:hover {
+  color: white; 
+  text-decoration: none;}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  font-size: 15px;
+  padding: 1px 8px 1px 8px;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+/* Formatting for Device Retargeting
+---------------------------------------- */
+
+/* Smaller than tablet */
+@media (max-width: 750px) {
+  .text{
+    display: none; }
+}
+
+/* Larger than phone */
+@media (min-width: 550px) {
+  .header {
+    margin-top: 18rem; }
+  .docs-section {
+    padding: 2rem 0; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  /* Navbar */
+  .navbar + .docs-section {
+    border-top-width: 0; }
+  .navbar,
+  .navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+  .navbar-spacer {
+    display: none; }
+  .navbar > .container {
+    width: 100%; }
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0; }
+  .navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0; }
+  .navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222; }
+  .navbar-link.active {
+    color: #e0004d; }
+  .has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .has-docked-nav .navbar-spacer {
+    display: block; }
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .has-docked-nav .navbar > .container {
+    width: 80%; }
+    
+/* Popover Elements
+---------------------------------------- */
+    
+  .popover.open {
+    display: block;
+  }
+  .popover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    top: 92%;
+    left: -50%;
+    -webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+       -moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+            filter: drop-shadow(0 0 6px rgba(0,0,0,.1)); }
+  .popover-item:first-child .popover-link:after, 
+  .popover-item:first-child .popover-link:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .popover-item:first-child .popover-link:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px; }
+  .popover-item:first-child .popover-link:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-bottom-color: #eee;
+    border-width: 11px;
+    margin-left: -11px; }
+  .popover-list {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .popover-item {
+    padding: 0;
+    margin: 0; }
+  .popover-link {
+    position: relative;
+    color: #222;
+    display: block;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .1rem; }
+  .popover-item:first-child .popover-link {
+    border-radius: 4px 4px 0 0; }
+  .popover-item:last-child .popover-link {
+    border-radius: 0 0 4px 4px;
+    border-bottom-width: 0; }
+  .popover-link:hover {
+    color: #fff;
+    background: #e0004d; }
+  .popover-link:hover,
+  .popover-item:first-child .popover-link:hover:after {
+    border-bottom-color: #e0004d; }
+}

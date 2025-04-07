@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e32c89f2c3c761947a139ad8c071f6a2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162871
+  packageName: Table
+  packageVersion: 1.1.1
+  assetPath: Assets/MASH Virtual/Demo/Table Demo/LightingData.asset
+  uploadId: 570518
